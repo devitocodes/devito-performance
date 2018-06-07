@@ -1,0 +1,56 @@
+Step dimension: t
+Domain dimension(s): x, y, z
+ Number of SIMD elements: 16
+ Vector-fold dimension(s) and point-size(s): x=4 * y=4 * z=1
+ Cluster dimension(s) and multiplier(s): x=1 * y=1 * z=1
+ Cluster dimension(s) and point-size(s): x=4 * y=4 * z=1
+Checking equation(s) with scalar operations...
+ If this fails, review stencil equation(s) for illegal dependencies.
+ Scanning 1 equations(s)...
+ Done.
+Checking equation(s) with folded-vector operations...
+ If this fails, the fold dimensions are not compatible with all equations.
+ Scanning 1 equations(s)...
+ Done.
+Checking equation(s) with clusters of vectors...
+ If this fails, the cluster dimensions are not compatible with all equations.
+ Scanning 1 equations(s)...
+  Resolving indirect dependencies...
+ Done.
+ Checking dependencies of equation-group 'stencil_0' w/no condition...
+  Updating the following grid(s) with 1 equation(s): u
+ Expression stats for scalar & vector equation-group(s):
+  204 node(s).
+  0 shared node(s).
+  82 grid read(s).
+  1 grid write(s).
+  101 FP math operation(s).
+ Expression stats after applying common subexpr elimination to scalar & vector equation-group(s):
+  148 node(s).
+  16 shared node(s).
+  53 grid read(s).
+  1 grid write(s).
+  81 FP math operation(s).
+ Expression stats after applying commutative recombination to scalar & vector equation-group(s):
+  144 node(s).
+  0 shared node(s).
+  82 grid read(s).
+  1 grid write(s).
+  101 FP math operation(s).
+ Expression stats after applying common subexpr elimination to scalar & vector equation-group(s):
+  96 node(s).
+  18 shared node(s).
+  53 grid read(s).
+  1 grid write(s).
+  83 FP math operation(s).
+Constructing cluster of equations containing 1 vector(s)...
+ Expression stats for cluster equation-group(s):
+  96 node(s).
+  18 shared node(s).
+  53 grid read(s).
+  1 grid write(s).
+  83 FP math operation(s).
+No changes after applying common subexpr elimination to cluster equation-group(s).
+No changes after applying commutative recombination to cluster equation-group(s).
+No changes after applying common subexpr elimination to cluster equation-group(s).
+Generating 'avx512' output...

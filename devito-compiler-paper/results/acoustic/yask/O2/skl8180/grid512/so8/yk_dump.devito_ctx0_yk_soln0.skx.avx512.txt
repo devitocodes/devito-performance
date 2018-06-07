@@ -1,0 +1,306 @@
+auto-tuner: starting block-size: t=1 * x=1 * y=1 * z=1
+auto-tuner: starting search radius: 64
+
+Regions:
+ In 't' dimension, rank-domain of size 1 contains 1 region(s) of size 1.
+ In 'x' dimension, rank-domain of size 512 contains 1 region(s) of size 512.
+ In 'y' dimension, rank-domain of size 512 contains 1 region(s) of size 512.
+ In 'z' dimension, rank-domain of size 512 contains 1 region(s) of size 512.
+ num-regions-per-rank-domain: 1
+ Since the temporal region size is 1, temporal wave-front tiling is NOT enabled.
+
+Blocks:
+ In 't' dimension, region of size 1 contains 1 block(s) of size 1.
+ In 'x' dimension, region of size 512 contains 8 block(s) of size 64.
+ In 'y' dimension, region of size 512 contains 8 block(s) of size 64.
+ In 'z' dimension, region of size 512 contains 8 block(s) of size 64.
+ num-blocks-per-region: 512
+ num-blocks-per-rank-domain: 512
+
+Sub-blocks:
+ In 't' dimension, block of size 1 contains 1 sub-block(s) of size 1.
+ In 'x' dimension, block of size 64 contains 16 sub-block(s) of size 4.
+ In 'y' dimension, block of size 64 contains 1 sub-block(s) of size 64.
+ In 'z' dimension, block of size 64 contains 1 sub-block(s) of size 64.
+ num-sub-blocks-per-block: 16
+
+Groups:
+ In 't' dimension, region of size 1 contains 1 block-group(s) of size 1.
+ In 'x' dimension, region of size 512 contains 8 block-group(s) of size 64.
+ In 'y' dimension, region of size 512 contains 8 block-group(s) of size 64.
+ In 'z' dimension, region of size 512 contains 8 block-group(s) of size 64.
+ num-block-groups-per-region: 512
+ In 't' dimension, block-group of size 1 contains 1 block(s) of size 1.
+ In 'x' dimension, block-group of size 64 contains 1 block(s) of size 64.
+ In 'y' dimension, block-group of size 64 contains 1 block(s) of size 64.
+ In 'z' dimension, block-group of size 64 contains 1 block(s) of size 64.
+ num-blocks-per-block-group: 1
+ In 't' dimension, block of size 1 contains 1 sub-block-group(s) of size 1.
+ In 'x' dimension, block of size 64 contains 16 sub-block-group(s) of size 4.
+ In 'y' dimension, block of size 64 contains 1 sub-block-group(s) of size 64.
+ In 'z' dimension, block of size 64 contains 1 sub-block-group(s) of size 64.
+ num-sub-block-groups-per-block: 16
+ In 't' dimension, sub-block-group of size 1 contains 1 block(s) of size 1.
+ In 'x' dimension, sub-block-group of size 4 contains 1 block(s) of size 4.
+ In 'y' dimension, sub-block-group of size 64 contains 1 block(s) of size 64.
+ In 'z' dimension, sub-block-group of size 64 contains 1 block(s) of size 64.
+ num-sub-blocks-per-sub-block-group: 1
+
+Num ranks: 1
+This rank index: 0
+Num OpenMP procs: 56
+Num OpenMP threads: 56
+  Num threads per region: 28
+  Num threads per block: 2
+
+Num grids: 4
+Num grids to be updated: 1
+Num stencil groups: 1
+Allocating 0B for 0 grid(s)...
+
+Problem sizes in points (from smallest to largest):
+ vector-size:          x=4 * y=4 * z=1
+ cluster-size:         x=4 * y=4 * z=1
+ sub-block-size:       t=1 * x=4 * y=64 * z=64
+ sub-block-group-size: t=1 * x=4 * y=64 * z=64
+ block-size:           t=1 * x=64 * y=64 * z=64
+ block-group-size:     t=1 * x=64 * y=64 * z=64
+ region-size:          t=1 * x=512 * y=512 * z=512
+ rank-domain-size:     t=1 * x=512 * y=512 * z=512
+ overall-problem-size: x=512 * y=512 * z=512
+
+Other settings:
+ yask-version:         2.01.04
+ stencil-name:         devito_ctx0_yc_soln0
+ vector-len:           16
+ extra-padding:        t=0, x=1, y=1, z=1
+ minimum-padding:      t=0, x=0, y=0, z=0
+ wave-front-angles:    x=0, y=0, z=0
+ max-halos:            x=8, y=8, z=8
+ L1-prefetch-distance: 0
+ L2-prefetch-distance: 2
+
+Stats for equation-group 'stencil_0':
+ sub-domain:                 x=0, y=0, z=0 ... x=511, y=511, z=511
+ sub-domain size:            x=512 * y=512 * z=512
+ valid points in sub domain: 134.218M
+ grid-updates per point:     1
+ grid-updates in sub-domain: 134.218M
+ grid-reads per point:       29
+ grid-reads in sub-domain:   3.89231G
+ est FP-ops per point:       55
+ est FP-ops in sub-domain:   7.38198G
+Total allocation in this rank: 2.68059GiB
+Total overall allocation in 1 rank(s): 2.68059GiB
+
+Amount-of-work stats:
+ domain-size in this rank for one time-step: 134.218M
+ overall-problem-size in all ranks for one time-step: 134.218M
+
+ num-writes-required in this rank for one time-step: 134.218M
+ num-writes-required in all ranks for one time-step: 134.218M
+
+ num-reads-required in this rank for one time-step: 3.89231G
+ num-reads-required in all ranks for one time-step: 3.89231G
+
+ est-FP-ops in this rank for one time-step: 7.38198G
+ est-FP-ops in all ranks for one time-step: 7.38198G
+
+Notes:
+ Domain-sizes and overall-problem-sizes are based on rank-domain sizes
+  and number of ranks regardless of number of grids or sub-domains.
+ Num-writes-required is based on sum of grid-updates in sub-domain across stencil-group(s).
+ Num-reads-required is based on sum of grid-reads in sub-domain across stencil-group(s).
+ Est-FP-ops are based on sum of est-FP-ops in sub-domain across stencil-group(s).
+
+Auto-tuning...
+auto-tuner: starting block-size: t=1 * x=64 * y=64 * z=64
+auto-tuner: starting search radius: 64
+auto-tuner: in warmup for 1.02268 secs
+auto-tuner: 3 steps(s) at 28.371 steps/sec with block-size t=1 * x=64 * y=64 * z=64
+auto-tuner: 3 steps(s) at 27.8082 steps/sec with block-size t=1 * x=320 * y=64 * z=64
+auto-tuner: 3 steps(s) at 24.5365 steps/sec with block-size t=1 * x=64 * y=320 * z=64
+auto-tuner: 3 steps(s) at 25.4907 steps/sec with block-size t=1 * x=64 * y=64 * z=320
+auto-tuner: new search radius: 32
+auto-tuner: 3 steps(s) at 27.771 steps/sec with block-size t=1 * x=192 * y=64 * z=64
+auto-tuner: 3 steps(s) at 25.3846 steps/sec with block-size t=1 * x=64 * y=192 * z=64
+auto-tuner: 3 steps(s) at 25.1522 steps/sec with block-size t=1 * x=192 * y=192 * z=64
+auto-tuner: 3 steps(s) at 25.8482 steps/sec with block-size t=1 * x=64 * y=64 * z=192
+auto-tuner: 3 steps(s) at 25.7255 steps/sec with block-size t=1 * x=192 * y=64 * z=192
+auto-tuner: 3 steps(s) at 25.532 steps/sec with block-size t=1 * x=64 * y=192 * z=192
+auto-tuner: new search radius: 16
+auto-tuner: 3 steps(s) at 27.5055 steps/sec with block-size t=1 * x=128 * y=64 * z=64
+auto-tuner: 3 steps(s) at 25.9028 steps/sec with block-size t=1 * x=64 * y=128 * z=64
+auto-tuner: 3 steps(s) at 25.8585 steps/sec with block-size t=1 * x=128 * y=128 * z=64
+auto-tuner: 3 steps(s) at 26.1427 steps/sec with block-size t=1 * x=64 * y=64 * z=128
+auto-tuner: 3 steps(s) at 26.4454 steps/sec with block-size t=1 * x=128 * y=64 * z=128
+auto-tuner: 3 steps(s) at 25.7564 steps/sec with block-size t=1 * x=64 * y=128 * z=128
+auto-tuner: 3 steps(s) at 25.1427 steps/sec with block-size t=1 * x=128 * y=128 * z=128
+auto-tuner: new search radius: 8
+auto-tuner: 3 steps(s) at 28.1263 steps/sec with block-size t=1 * x=32 * y=32 * z=32
+auto-tuner: 3 steps(s) at 28.183 steps/sec with block-size t=1 * x=64 * y=32 * z=32
+auto-tuner: 3 steps(s) at 28.184 steps/sec with block-size t=1 * x=96 * y=32 * z=32
+auto-tuner: 3 steps(s) at 28.0893 steps/sec with block-size t=1 * x=32 * y=64 * z=32
+auto-tuner: 3 steps(s) at 28.0023 steps/sec with block-size t=1 * x=64 * y=64 * z=32
+auto-tuner: 3 steps(s) at 27.9646 steps/sec with block-size t=1 * x=96 * y=64 * z=32
+auto-tuner: 3 steps(s) at 27.9762 steps/sec with block-size t=1 * x=32 * y=96 * z=32
+auto-tuner: 3 steps(s) at 27.7953 steps/sec with block-size t=1 * x=64 * y=96 * z=32
+auto-tuner: 3 steps(s) at 27.4361 steps/sec with block-size t=1 * x=96 * y=96 * z=32
+auto-tuner: 3 steps(s) at 28.3985 steps/sec with block-size t=1 * x=32 * y=32 * z=64
+auto-tuner: 3 steps(s) at 28.675 steps/sec with block-size t=1 * x=64 * y=32 * z=64
+auto-tuner: 3 steps(s) at 28.58 steps/sec with block-size t=1 * x=96 * y=32 * z=64
+auto-tuner: 3 steps(s) at 27.9279 steps/sec with block-size t=1 * x=32 * y=64 * z=64
+auto-tuner: 3 steps(s) at 27.6134 steps/sec with block-size t=1 * x=96 * y=64 * z=64
+auto-tuner: 3 steps(s) at 27.3644 steps/sec with block-size t=1 * x=32 * y=96 * z=64
+auto-tuner: 3 steps(s) at 27.1659 steps/sec with block-size t=1 * x=64 * y=96 * z=64
+auto-tuner: 3 steps(s) at 26.8029 steps/sec with block-size t=1 * x=96 * y=96 * z=64
+auto-tuner: 3 steps(s) at 28.3534 steps/sec with block-size t=1 * x=32 * y=32 * z=96
+auto-tuner: 3 steps(s) at 28.427 steps/sec with block-size t=1 * x=64 * y=32 * z=96
+auto-tuner: 3 steps(s) at 28.2594 steps/sec with block-size t=1 * x=96 * y=32 * z=96
+auto-tuner: 3 steps(s) at 27.2287 steps/sec with block-size t=1 * x=32 * y=64 * z=96
+auto-tuner: 3 steps(s) at 26.9993 steps/sec with block-size t=1 * x=64 * y=64 * z=96
+auto-tuner: 3 steps(s) at 26.9668 steps/sec with block-size t=1 * x=96 * y=64 * z=96
+auto-tuner: 3 steps(s) at 26.1652 steps/sec with block-size t=1 * x=32 * y=96 * z=96
+auto-tuner: 3 steps(s) at 25.8569 steps/sec with block-size t=1 * x=64 * y=96 * z=96
+auto-tuner: 3 steps(s) at 25.6312 steps/sec with block-size t=1 * x=96 * y=96 * z=96
+auto-tuner: new search radius: 4
+auto-tuner: 3 steps(s) at 28.2955 steps/sec with block-size t=1 * x=48 * y=16 * z=48
+auto-tuner: 3 steps(s) at 28.4397 steps/sec with block-size t=1 * x=64 * y=16 * z=48
+auto-tuner: 3 steps(s) at 28.4141 steps/sec with block-size t=1 * x=80 * y=16 * z=48
+auto-tuner: 3 steps(s) at 28.4667 steps/sec with block-size t=1 * x=48 * y=32 * z=48
+auto-tuner: 3 steps(s) at 28.5154 steps/sec with block-size t=1 * x=64 * y=32 * z=48
+auto-tuner: 3 steps(s) at 28.446 steps/sec with block-size t=1 * x=80 * y=32 * z=48
+auto-tuner: 3 steps(s) at 28.4051 steps/sec with block-size t=1 * x=48 * y=48 * z=48
+auto-tuner: 3 steps(s) at 28.4129 steps/sec with block-size t=1 * x=64 * y=48 * z=48
+auto-tuner: 3 steps(s) at 28.3254 steps/sec with block-size t=1 * x=80 * y=48 * z=48
+auto-tuner: 3 steps(s) at 28.5339 steps/sec with block-size t=1 * x=48 * y=16 * z=64
+auto-tuner: 3 steps(s) at 28.6359 steps/sec with block-size t=1 * x=64 * y=16 * z=64
+auto-tuner: 3 steps(s) at 28.5608 steps/sec with block-size t=1 * x=80 * y=16 * z=64
+auto-tuner: 3 steps(s) at 28.6307 steps/sec with block-size t=1 * x=48 * y=32 * z=64
+auto-tuner: 3 steps(s) at 28.6114 steps/sec with block-size t=1 * x=80 * y=32 * z=64
+auto-tuner: 3 steps(s) at 28.2936 steps/sec with block-size t=1 * x=48 * y=48 * z=64
+auto-tuner: 3 steps(s) at 28.2495 steps/sec with block-size t=1 * x=64 * y=48 * z=64
+auto-tuner: 3 steps(s) at 28.1331 steps/sec with block-size t=1 * x=80 * y=48 * z=64
+auto-tuner: 3 steps(s) at 28.5365 steps/sec with block-size t=1 * x=48 * y=16 * z=80
+auto-tuner: 3 steps(s) at 28.6204 steps/sec with block-size t=1 * x=64 * y=16 * z=80
+auto-tuner: 3 steps(s) at 28.5371 steps/sec with block-size t=1 * x=80 * y=16 * z=80
+auto-tuner: 3 steps(s) at 28.4766 steps/sec with block-size t=1 * x=48 * y=32 * z=80
+auto-tuner: 3 steps(s) at 28.481 steps/sec with block-size t=1 * x=64 * y=32 * z=80
+auto-tuner: 3 steps(s) at 28.3647 steps/sec with block-size t=1 * x=80 * y=32 * z=80
+auto-tuner: 3 steps(s) at 27.9293 steps/sec with block-size t=1 * x=48 * y=48 * z=80
+auto-tuner: 3 steps(s) at 27.8109 steps/sec with block-size t=1 * x=64 * y=48 * z=80
+auto-tuner: 3 steps(s) at 27.7538 steps/sec with block-size t=1 * x=80 * y=48 * z=80
+auto-tuner: new search radius: 2
+auto-tuner: 3 steps(s) at 28.1795 steps/sec with block-size t=1 * x=56 * y=24 * z=56
+auto-tuner: 3 steps(s) at 28.2882 steps/sec with block-size t=1 * x=64 * y=24 * z=56
+auto-tuner: 3 steps(s) at 28.2196 steps/sec with block-size t=1 * x=72 * y=24 * z=56
+auto-tuner: 3 steps(s) at 28.2059 steps/sec with block-size t=1 * x=56 * y=32 * z=56
+auto-tuner: 3 steps(s) at 28.2633 steps/sec with block-size t=1 * x=64 * y=32 * z=56
+auto-tuner: 3 steps(s) at 28.1793 steps/sec with block-size t=1 * x=72 * y=32 * z=56
+auto-tuner: 3 steps(s) at 28.0554 steps/sec with block-size t=1 * x=56 * y=40 * z=56
+auto-tuner: 3 steps(s) at 28.1463 steps/sec with block-size t=1 * x=64 * y=40 * z=56
+auto-tuner: 3 steps(s) at 28.1498 steps/sec with block-size t=1 * x=72 * y=40 * z=56
+auto-tuner: 3 steps(s) at 28.376 steps/sec with block-size t=1 * x=56 * y=24 * z=64
+auto-tuner: 3 steps(s) at 28.4478 steps/sec with block-size t=1 * x=64 * y=24 * z=64
+auto-tuner: 3 steps(s) at 28.3516 steps/sec with block-size t=1 * x=72 * y=24 * z=64
+auto-tuner: 3 steps(s) at 28.3134 steps/sec with block-size t=1 * x=56 * y=32 * z=64
+auto-tuner: 3 steps(s) at 28.3423 steps/sec with block-size t=1 * x=72 * y=32 * z=64
+auto-tuner: 3 steps(s) at 28.1966 steps/sec with block-size t=1 * x=56 * y=40 * z=64
+auto-tuner: 3 steps(s) at 28.2579 steps/sec with block-size t=1 * x=64 * y=40 * z=64
+auto-tuner: 3 steps(s) at 28.2674 steps/sec with block-size t=1 * x=72 * y=40 * z=64
+auto-tuner: 3 steps(s) at 28.3687 steps/sec with block-size t=1 * x=56 * y=24 * z=72
+auto-tuner: 3 steps(s) at 28.4823 steps/sec with block-size t=1 * x=64 * y=24 * z=72
+auto-tuner: 3 steps(s) at 28.3871 steps/sec with block-size t=1 * x=72 * y=24 * z=72
+auto-tuner: 3 steps(s) at 28.3218 steps/sec with block-size t=1 * x=56 * y=32 * z=72
+auto-tuner: 3 steps(s) at 28.4468 steps/sec with block-size t=1 * x=64 * y=32 * z=72
+auto-tuner: 3 steps(s) at 28.3501 steps/sec with block-size t=1 * x=72 * y=32 * z=72
+auto-tuner: 3 steps(s) at 28.2194 steps/sec with block-size t=1 * x=56 * y=40 * z=72
+auto-tuner: 3 steps(s) at 28.391 steps/sec with block-size t=1 * x=64 * y=40 * z=72
+auto-tuner: 3 steps(s) at 28.3145 steps/sec with block-size t=1 * x=72 * y=40 * z=72
+auto-tuner: new search radius: 1
+auto-tuner: 3 steps(s) at 28.7934 steps/sec with block-size t=1 * x=60 * y=28 * z=60
+auto-tuner: 3 steps(s) at 28.847 steps/sec with block-size t=1 * x=64 * y=28 * z=60
+auto-tuner: 3 steps(s) at 28.7759 steps/sec with block-size t=1 * x=68 * y=28 * z=60
+auto-tuner: 3 steps(s) at 28.8399 steps/sec with block-size t=1 * x=60 * y=32 * z=60
+auto-tuner: 3 steps(s) at 28.8598 steps/sec with block-size t=1 * x=64 * y=32 * z=60
+auto-tuner: 3 steps(s) at 28.7763 steps/sec with block-size t=1 * x=68 * y=32 * z=60
+auto-tuner: 3 steps(s) at 28.7919 steps/sec with block-size t=1 * x=60 * y=36 * z=60
+auto-tuner: 3 steps(s) at 28.8294 steps/sec with block-size t=1 * x=64 * y=36 * z=60
+auto-tuner: 3 steps(s) at 28.7345 steps/sec with block-size t=1 * x=68 * y=36 * z=60
+auto-tuner: 3 steps(s) at 28.8662 steps/sec with block-size t=1 * x=60 * y=28 * z=64
+auto-tuner: 3 steps(s) at 28.8802 steps/sec with block-size t=1 * x=64 * y=28 * z=64
+auto-tuner: 3 steps(s) at 28.8426 steps/sec with block-size t=1 * x=68 * y=28 * z=64
+auto-tuner: 3 steps(s) at 28.7576 steps/sec with block-size t=1 * x=60 * y=32 * z=64
+auto-tuner: 3 steps(s) at 28.713 steps/sec with block-size t=1 * x=68 * y=32 * z=64
+auto-tuner: 3 steps(s) at 28.6717 steps/sec with block-size t=1 * x=60 * y=36 * z=64
+auto-tuner: 3 steps(s) at 28.7154 steps/sec with block-size t=1 * x=64 * y=36 * z=64
+auto-tuner: 3 steps(s) at 28.7066 steps/sec with block-size t=1 * x=68 * y=36 * z=64
+auto-tuner: 3 steps(s) at 28.8635 steps/sec with block-size t=1 * x=60 * y=28 * z=68
+auto-tuner: 3 steps(s) at 28.8818 steps/sec with block-size t=1 * x=64 * y=28 * z=68
+auto-tuner: 3 steps(s) at 28.7989 steps/sec with block-size t=1 * x=68 * y=28 * z=68
+auto-tuner: 3 steps(s) at 28.8688 steps/sec with block-size t=1 * x=60 * y=32 * z=68
+auto-tuner: 3 steps(s) at 28.8784 steps/sec with block-size t=1 * x=64 * y=32 * z=68
+auto-tuner: 3 steps(s) at 28.7804 steps/sec with block-size t=1 * x=68 * y=32 * z=68
+auto-tuner: 3 steps(s) at 28.7759 steps/sec with block-size t=1 * x=60 * y=36 * z=68
+auto-tuner: 3 steps(s) at 28.7992 steps/sec with block-size t=1 * x=64 * y=36 * z=68
+auto-tuner: 3 steps(s) at 28.7361 steps/sec with block-size t=1 * x=68 * y=36 * z=68
+auto-tuner: 3 steps(s) at 28.7621 steps/sec with block-size t=1 * x=60 * y=24 * z=64
+auto-tuner: 3 steps(s) at 28.7929 steps/sec with block-size t=1 * x=68 * y=24 * z=64
+auto-tuner: 3 steps(s) at 28.8826 steps/sec with block-size t=1 * x=60 * y=24 * z=68
+auto-tuner: 3 steps(s) at 28.9253 steps/sec with block-size t=1 * x=64 * y=24 * z=68
+auto-tuner: 3 steps(s) at 28.8565 steps/sec with block-size t=1 * x=68 * y=24 * z=68
+auto-tuner: 3 steps(s) at 28.9047 steps/sec with block-size t=1 * x=60 * y=24 * z=72
+auto-tuner: 3 steps(s) at 28.8553 steps/sec with block-size t=1 * x=68 * y=24 * z=72
+auto-tuner: 3 steps(s) at 28.8543 steps/sec with block-size t=1 * x=60 * y=28 * z=72
+auto-tuner: 3 steps(s) at 28.8784 steps/sec with block-size t=1 * x=64 * y=28 * z=72
+auto-tuner: 3 steps(s) at 28.7852 steps/sec with block-size t=1 * x=68 * y=28 * z=72
+auto-tuner: 3 steps(s) at 28.8306 steps/sec with block-size t=1 * x=60 * y=32 * z=72
+auto-tuner: 3 steps(s) at 28.7652 steps/sec with block-size t=1 * x=68 * y=32 * z=72
+auto-tuner: 3 steps(s) at 28.9252 steps/sec with block-size t=1 * x=60 * y=20 * z=64
+auto-tuner: 3 steps(s) at 28.9567 steps/sec with block-size t=1 * x=64 * y=20 * z=64
+auto-tuner: 3 steps(s) at 28.91 steps/sec with block-size t=1 * x=68 * y=20 * z=64
+auto-tuner: 3 steps(s) at 28.933 steps/sec with block-size t=1 * x=60 * y=20 * z=68
+auto-tuner: 3 steps(s) at 28.9736 steps/sec with block-size t=1 * x=64 * y=20 * z=68
+auto-tuner: 3 steps(s) at 28.9202 steps/sec with block-size t=1 * x=68 * y=20 * z=68
+auto-tuner: 3 steps(s) at 28.8802 steps/sec with block-size t=1 * x=60 * y=20 * z=72
+auto-tuner: 3 steps(s) at 28.9209 steps/sec with block-size t=1 * x=64 * y=20 * z=72
+auto-tuner: 3 steps(s) at 28.8538 steps/sec with block-size t=1 * x=68 * y=20 * z=72
+auto-tuner: 3 steps(s) at 28.8777 steps/sec with block-size t=1 * x=60 * y=16 * z=64
+auto-tuner: 3 steps(s) at 28.8563 steps/sec with block-size t=1 * x=68 * y=16 * z=64
+auto-tuner: 3 steps(s) at 28.98 steps/sec with block-size t=1 * x=60 * y=16 * z=68
+auto-tuner: 3 steps(s) at 29.0025 steps/sec with block-size t=1 * x=64 * y=16 * z=68
+auto-tuner: 3 steps(s) at 28.9941 steps/sec with block-size t=1 * x=68 * y=16 * z=68
+auto-tuner: 3 steps(s) at 28.9286 steps/sec with block-size t=1 * x=60 * y=16 * z=72
+auto-tuner: 3 steps(s) at 28.9447 steps/sec with block-size t=1 * x=64 * y=16 * z=72
+auto-tuner: 3 steps(s) at 28.9063 steps/sec with block-size t=1 * x=68 * y=16 * z=72
+auto-tuner: 3 steps(s) at 28.9732 steps/sec with block-size t=1 * x=60 * y=12 * z=64
+auto-tuner: 3 steps(s) at 29.013 steps/sec with block-size t=1 * x=64 * y=12 * z=64
+auto-tuner: 3 steps(s) at 28.9981 steps/sec with block-size t=1 * x=68 * y=12 * z=64
+auto-tuner: 3 steps(s) at 28.9763 steps/sec with block-size t=1 * x=60 * y=12 * z=68
+auto-tuner: 3 steps(s) at 29.0259 steps/sec with block-size t=1 * x=64 * y=12 * z=68
+auto-tuner: 3 steps(s) at 29.007 steps/sec with block-size t=1 * x=68 * y=12 * z=68
+auto-tuner: 3 steps(s) at 28.9571 steps/sec with block-size t=1 * x=60 * y=12 * z=72
+auto-tuner: 3 steps(s) at 29.0092 steps/sec with block-size t=1 * x=64 * y=12 * z=72
+auto-tuner: 3 steps(s) at 28.979 steps/sec with block-size t=1 * x=68 * y=12 * z=72
+auto-tuner: 3 steps(s) at 28.9162 steps/sec with block-size t=1 * x=60 * y=8 * z=64
+auto-tuner: 3 steps(s) at 28.9392 steps/sec with block-size t=1 * x=64 * y=8 * z=64
+auto-tuner: 3 steps(s) at 28.9768 steps/sec with block-size t=1 * x=68 * y=8 * z=64
+auto-tuner: 3 steps(s) at 28.8991 steps/sec with block-size t=1 * x=60 * y=8 * z=68
+auto-tuner: 3 steps(s) at 28.9559 steps/sec with block-size t=1 * x=64 * y=8 * z=68
+auto-tuner: 3 steps(s) at 28.9795 steps/sec with block-size t=1 * x=68 * y=8 * z=68
+auto-tuner: 3 steps(s) at 28.9064 steps/sec with block-size t=1 * x=60 * y=8 * z=72
+auto-tuner: 3 steps(s) at 28.9684 steps/sec with block-size t=1 * x=64 * y=8 * z=72
+auto-tuner: 3 steps(s) at 28.9931 steps/sec with block-size t=1 * x=68 * y=8 * z=72
+auto-tuner: applying block-size t=1 * x=64 * y=12 * z=68
+auto-tuner: done
+Auto-tuner done after 532 step(s) in 18.8788 secs.
+best-block-size: t=1 * x=64 * y=12 * z=68
+best-sub-block-size: t=1 * x=4 * y=12 * z=68
+num-points-per-step:                    134.218M
+num-writes-per-step:                    134.218M
+num-est-FP-ops-per-step:                7.38198G
+num-steps-done:                         327
+elapsed-time (sec):                     11.2664
+throughput (num-points/sec):            3.89559G
+throughput (est-FLOPS):                 214.258G
+throughput (num-writes/sec):            3.89559G

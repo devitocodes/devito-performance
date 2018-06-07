@@ -1,0 +1,506 @@
+Tue Dec 19 14:51:46 PST 2017
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                272
+On-line CPU(s) list:   0-271
+Thread(s) per core:    4
+Core(s) per socket:    68
+Socket(s):             1
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 87
+Model name:            Intel(R) Xeon Phi(TM) CPU 7250 @ 1.40GHz
+Stepping:              1
+CPU MHz:               1500.460
+BogoMIPS:              2793.75
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              1024K
+NUMA node0 CPU(s):     0-271
+NUMA node1 CPU(s):     
+Linux ortce-knl8 3.10.0-327.el7.x86_64 #1 SMP Thu Oct 29 17:29:29 EDT 2015 x86_64 x86_64 x86_64 GNU/Linux
+available: 2 nodes (0-1)
+node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271
+node 0 size: 98200 MB
+node 0 free: 94292 MB
+node 1 cpus:
+node 1 size: 16384 MB
+node 1 free: 15381 MB
+node distances:
+node   0   1 
+  0:  10  31 
+  1:  31  10 
+
+Per-node system memory usage (in MBs):
+                          Node 0          Node 1           Total
+                 --------------- --------------- ---------------
+MemTotal                98200.81        16384.00       114584.81
+MemFree                 94292.15        15381.96       109674.11
+MemUsed                  3908.66         1002.04         4910.71
+Active                    330.80          132.54          463.34
+Inactive                  515.98          230.55          746.54
+Active(anon)               83.24            0.00           83.24
+Inactive(anon)             17.59            0.00           17.59
+Active(file)              247.56          132.54          380.10
+Inactive(file)            498.39          230.55          728.94
+Unevictable                 0.00            0.00            0.00
+Mlocked                     0.00            0.00            0.00
+Dirty                       0.00            0.00            0.00
+Writeback                   0.00            0.00            0.00
+FilePages                 763.61          363.09         1126.70
+Mapped                     37.91            0.00           37.91
+AnonPages                  83.44            0.00           83.44
+Shmem                      17.66            0.00           17.66
+KernelStack                39.58            0.00           39.58
+PageTables                  6.70            0.00            6.70
+NFS_Unstable                0.00            0.00            0.00
+Bounce                      0.00            0.00            0.00
+WritebackTmp                0.00            0.00            0.00
+Slab                      551.37          155.51          706.88
+SReclaimable              221.69           47.77          269.46
+SUnreclaim                329.68          107.74          437.42
+AnonHugePages              10.00            0.00           10.00
+HugePages_Total             0.00            0.00            0.00
+HugePages_Free              0.00            0.00            0.00
+HugePages_Surp              0.00            0.00            0.00
+top - 14:51:47 up 1 day,  5:58,  1 user,  load average: 204.70, 145.02, 131.49
+Tasks: 2210 total,   1 running, 2209 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.4 us,  0.4 sy,  0.0 ni, 93.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem : 11538529+total, 11230468+free,  1203088 used,  1877520 buff/cache
+KiB Swap: 58593276 total, 58593276 free,        0 used. 11337838+avail Mem 
+
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+137347 cyount    20   0  152536   4096   1460 R  57.1  0.0   0:00.41 top
+     1 root      20   0   51548  13932   2384 S   0.0  0.0   0:34.37 systemd
+     2 root      20   0       0      0      0 S   0.0  0.0   0:00.12 kthreadd
+     3 root      20   0       0      0      0 S   0.0  0.0   0:00.00 ksoftirqd/0
+     4 root      20   0       0      0      0 S   0.0  0.0   1:48.47 kworker/0:0
+     5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H
+     7 root      rt   0       0      0      0 S   0.0  0.0   0:04.10 migration/0
+     8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh
+     9 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/0
+    10 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/1
+    11 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/2
+    12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/3
+    13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/4
+    14 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/5
+    15 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/6
+    16 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/7
+    17 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/8
+    18 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/9
+    19 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/10
+    20 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/11
+    21 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/12
+    22 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/13
+    23 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/14
+env DEVITO_PLATFORM=knl DEVITO_ISA=avx512 DEVITO_DLE_OPTIONS=blockinner:True DEVITO_AUTOTUNING=aggressive DEVITO_BACKEND=core DEVITO_OPENMP=1 DEVITO_ARCH=intel DEVITO_LOGGING=DEBUG DEVITO_YASK_AUTOTUNING=preemptive DEVITO_YASK_DUMP=devito.bench.2017-12-19/acoustic/core/bmO2/ortce-knl8/grid768/so8 numactl --preferred=1 python examples/seismic/benchmark.py bench -bm O2 -P acoustic -so 8 -to 2 -d 768 768 768 --tn 1000 -x 3 -r devito.bench.2017-12-19/acoustic/core/bmO2/ortce-knl8/grid768/so8
+Allocating memory for m ((788, 788, 788))
+Allocating memory for damp ((788, 788, 788))
+Allocating memory for src ((329, 1))
+Allocating memory for src_coords ((1, 3))
+Allocating memory for nrec_coords ((768, 3))
+Applying Forward
+Allocating memory for rec_coords ((768, 3))
+DSE: extract_time_invariants [flops: 75, elapsed: 0.04] >>
+     eliminate_inter_stencil_redundancies [flops: 75, elapsed: 0.04] >>
+     eliminate_intra_stencil_redundancies [flops: 66, elapsed: 0.07] >>
+     factorize [flops: 46, elapsed: 0.37] >>
+     finalize [flops: 50, elapsed: 0.01]
+     [Total elapsed: 0.53 s]
+DLE: avoid_denormals [elapsed: 0.00] >>
+     loop_fission [elapsed: 0.06] >>
+     loop_blocking [elapsed: 0.71] >>
+     simdize [elapsed: 1.21] >>
+     ompize [elapsed: 0.52] >>
+     create_elemental_functions [elapsed: 0.89] >>
+     minimize_remainders [elapsed: 0.08]
+     [Total elapsed: 3.47 s]
+Allocating memory for rec ((329, 768))
+Allocating memory for u ((3, 788, 788, 788))
+IntelCompiler: compiled /tmp/devito-i8vvenfx/92bd3b21d3ad32a95984b5dd0a371435b59223c7.c [6.29 s]
+AutoTuner: Block shape <8,8,8> took 0.440369 (s) in 3 time steps
+AutoTuner: Block shape <16,16,16> took 0.444127 (s) in 3 time steps
+AutoTuner: Block shape <24,24,24> took 0.694216 (s) in 3 time steps
+AutoTuner: Block shape <32,32,32> took 0.552381 (s) in 3 time steps
+AutoTuner: Block shape <40,40,40> took 0.645462 (s) in 3 time steps
+AutoTuner: Block shape <64,64,64> took 0.529744 (s) in 3 time steps
+AutoTuner: Block shape <128,128,128> took 0.447572 (s) in 3 time steps
+AutoTuner: Block shape <256,256,256> took 0.478886 (s) in 3 time steps
+AutoTuner: Block shape <512,512,512> took 4.891389 (s) in 3 time steps
+AutoTuner: Block shape <780,780,780> took 3.437889 (s) in 3 time steps
+AutoTuner: Block shape <8,8,16> took 0.214127 (s) in 3 time steps
+AutoTuner: Block shape <8,8,24> took 0.378052 (s) in 3 time steps
+AutoTuner: Block shape <8,8,32> took 0.279676 (s) in 3 time steps
+AutoTuner: Block shape <8,8,40> took 0.358900 (s) in 3 time steps
+AutoTuner: Block shape <8,8,64> took 0.322457 (s) in 3 time steps
+AutoTuner: Block shape <8,8,128> took 0.357159 (s) in 3 time steps
+AutoTuner: Block shape <8,8,256> took 0.374464 (s) in 3 time steps
+AutoTuner: Block shape <8,8,512> took 0.376632 (s) in 3 time steps
+AutoTuner: Block shape <8,8,780> took 0.323571 (s) in 3 time steps
+AutoTuner: Block shape <16,16,8> took 0.916343 (s) in 3 time steps
+AutoTuner: Block shape <16,16,24> took 0.535001 (s) in 3 time steps
+AutoTuner: Block shape <16,16,32> took 0.391401 (s) in 3 time steps
+AutoTuner: Block shape <16,16,40> took 0.501028 (s) in 3 time steps
+AutoTuner: Block shape <16,16,64> took 0.425610 (s) in 3 time steps
+AutoTuner: Block shape <16,16,128> took 0.425017 (s) in 3 time steps
+AutoTuner: Block shape <16,16,256> took 0.404537 (s) in 3 time steps
+AutoTuner: Block shape <16,16,512> took 0.387141 (s) in 3 time steps
+AutoTuner: Block shape <16,16,780> took 0.320696 (s) in 3 time steps
+AutoTuner: Block shape <24,24,8> took 1.255210 (s) in 3 time steps
+AutoTuner: Block shape <24,24,16> took 0.531395 (s) in 3 time steps
+AutoTuner: Block shape <24,24,32> took 0.494651 (s) in 3 time steps
+AutoTuner: Block shape <24,24,40> took 0.579081 (s) in 3 time steps
+AutoTuner: Block shape <24,24,64> took 0.473445 (s) in 3 time steps
+AutoTuner: Block shape <24,24,128> took 0.442150 (s) in 3 time steps
+AutoTuner: Block shape <24,24,256> took 0.410314 (s) in 3 time steps
+AutoTuner: Block shape <24,24,512> took 0.387810 (s) in 3 time steps
+AutoTuner: Block shape <24,24,780> took 0.316989 (s) in 3 time steps
+AutoTuner: Block shape <32,32,8> took 1.469291 (s) in 3 time steps
+AutoTuner: Block shape <32,32,16> took 0.642522 (s) in 3 time steps
+AutoTuner: Block shape <32,32,24> took 0.713271 (s) in 3 time steps
+AutoTuner: Block shape <32,32,40> took 0.602387 (s) in 3 time steps
+AutoTuner: Block shape <32,32,64> took 0.486664 (s) in 3 time steps
+AutoTuner: Block shape <32,32,128> took 0.446289 (s) in 3 time steps
+AutoTuner: Block shape <32,32,256> took 0.415102 (s) in 3 time steps
+AutoTuner: Block shape <32,32,512> took 0.386969 (s) in 3 time steps
+AutoTuner: Block shape <32,32,780> took 0.320647 (s) in 3 time steps
+AutoTuner: Block shape <16,8,8> took 0.781009 (s) in 3 time steps
+AutoTuner: Block shape <8,16,8> took 0.800001 (s) in 3 time steps
+AutoTuner: Block shape <16,8,16> took 0.361841 (s) in 3 time steps
+AutoTuner: Block shape <8,16,16> took 0.375905 (s) in 3 time steps
+AutoTuner: Block shape <32,16,16> took 0.454048 (s) in 3 time steps
+AutoTuner: Block shape <16,32,16> took 0.574971 (s) in 3 time steps
+AutoTuner: Block shape <32,16,32> took 0.437434 (s) in 3 time steps
+AutoTuner: Block shape <16,32,32> took 0.515653 (s) in 3 time steps
+AutoTuner: Block shape <48,24,24> took 0.685876 (s) in 3 time steps
+AutoTuner: Block shape <24,48,24> took 0.740569 (s) in 3 time steps
+AutoTuner: Block shape <24,24,48> took 0.488516 (s) in 3 time steps
+AutoTuner: Block shape <48,48,24> took 0.729279 (s) in 3 time steps
+AutoTuner: Block shape <48,24,48> took 0.499922 (s) in 3 time steps
+AutoTuner: Block shape <24,48,48> took 0.515616 (s) in 3 time steps
+AutoTuner: Block shape <48,48,48> took 0.513831 (s) in 3 time steps
+AutoTuner: Block shape <64,32,32> took 0.547121 (s) in 3 time steps
+AutoTuner: Block shape <32,64,32> took 0.565805 (s) in 3 time steps
+AutoTuner: Block shape <64,64,32> took 0.570041 (s) in 3 time steps
+AutoTuner: Block shape <64,32,64> took 0.488286 (s) in 3 time steps
+AutoTuner: Block shape <32,64,64> took 0.493690 (s) in 3 time steps
+AutoTuner: Block shape <80,40,40> took 0.607472 (s) in 3 time steps
+AutoTuner: Block shape <40,80,40> took 0.617557 (s) in 3 time steps
+AutoTuner: Block shape <40,40,80> took 0.472714 (s) in 3 time steps
+AutoTuner: Block shape <80,80,40> took 0.631027 (s) in 3 time steps
+AutoTuner: Block shape <80,40,80> took 0.485850 (s) in 3 time steps
+AutoTuner: Block shape <40,80,80> took 0.491497 (s) in 3 time steps
+AutoTuner: Block shape <80,80,80> took 0.521074 (s) in 3 time steps
+AutoTuner: Block shape <128,64,64> took 0.508436 (s) in 3 time steps
+AutoTuner: Block shape <64,128,64> took 0.512996 (s) in 3 time steps
+AutoTuner: Block shape <64,64,128> took 0.462914 (s) in 3 time steps
+AutoTuner: Block shape <128,128,64> took 0.506933 (s) in 3 time steps
+AutoTuner: Block shape <128,64,128> took 0.458030 (s) in 3 time steps
+AutoTuner: Block shape <64,128,128> took 0.467677 (s) in 3 time steps
+AutoTuner: Block shape <256,128,128> took 0.490568 (s) in 3 time steps
+AutoTuner: Block shape <128,256,128> took 0.489205 (s) in 3 time steps
+AutoTuner: Block shape <128,128,256> took 0.441211 (s) in 3 time steps
+AutoTuner: Block shape <256,256,128> took 0.511699 (s) in 3 time steps
+AutoTuner: Block shape <256,128,256> took 0.462770 (s) in 3 time steps
+AutoTuner: Block shape <128,256,256> took 0.463214 (s) in 3 time steps
+AutoTuner: Block shape <512,256,256> took 1.156072 (s) in 3 time steps
+AutoTuner: Block shape <256,512,256> took 1.160632 (s) in 3 time steps
+AutoTuner: Block shape <256,256,512> took 0.821446 (s) in 3 time steps
+AutoTuner: Block shape <512,512,256> took 3.208960 (s) in 3 time steps
+AutoTuner: Block shape <512,256,512> took 2.260158 (s) in 3 time steps
+AutoTuner: Block shape <256,512,512> took 2.261167 (s) in 3 time steps
+Auto-tuned block shape: {'x0_block_size': 8, 'y0_block_size': 8, 'z0_block_size': 16}
+=========================================================================================
+Section section_1<327,1> with OI=0.96 computed in 0.001 s [0.04 GFlops/s]
+Section section_2<327,768> with OI=2.09 computed in 0.019 s [1.12 GFlops/s]
+Section main<327,780,780,780> with OI=3.01 computed in 35.587 s [218.03 GFlops/s, 4.36 GPts/s]
+=========================================================================================
+Allocating memory for m ((788, 788, 788))
+Allocating memory for damp ((788, 788, 788))
+Allocating memory for src ((329, 1))
+Allocating memory for src_coords ((1, 3))
+Allocating memory for nrec_coords ((768, 3))
+Applying Forward
+Allocating memory for rec_coords ((768, 3))
+DSE: extract_time_invariants [flops: 75, elapsed: 0.04] >>
+     eliminate_inter_stencil_redundancies [flops: 75, elapsed: 0.04] >>
+     eliminate_intra_stencil_redundancies [flops: 66, elapsed: 0.07] >>
+     factorize [flops: 46, elapsed: 0.37] >>
+     finalize [flops: 50, elapsed: 0.01]
+     [Total elapsed: 0.54 s]
+DLE: avoid_denormals [elapsed: 0.00] >>
+     loop_fission [elapsed: 0.06] >>
+     loop_blocking [elapsed: 0.73] >>
+     simdize [elapsed: 0.14] >>
+     ompize [elapsed: 0.53] >>
+     create_elemental_functions [elapsed: 0.95] >>
+     minimize_remainders [elapsed: 0.09]
+     [Total elapsed: 2.49 s]
+Allocating memory for rec ((329, 768))
+Allocating memory for u ((3, 788, 788, 788))
+IntelCompiler: compiled /tmp/devito-i8vvenfx/92bd3b21d3ad32a95984b5dd0a371435b59223c7.c [6.23 s]
+AutoTuner: Block shape <8,8,8> took 0.285787 (s) in 3 time steps
+AutoTuner: Block shape <16,16,16> took 0.417021 (s) in 3 time steps
+AutoTuner: Block shape <24,24,24> took 0.657407 (s) in 3 time steps
+AutoTuner: Block shape <32,32,32> took 0.538464 (s) in 3 time steps
+AutoTuner: Block shape <40,40,40> took 0.608262 (s) in 3 time steps
+AutoTuner: Block shape <64,64,64> took 0.504704 (s) in 3 time steps
+AutoTuner: Block shape <128,128,128> took 0.418823 (s) in 3 time steps
+AutoTuner: Block shape <256,256,256> took 0.466544 (s) in 3 time steps
+AutoTuner: Block shape <512,512,512> took 4.895739 (s) in 3 time steps
+AutoTuner: Block shape <780,780,780> took 3.478220 (s) in 3 time steps
+AutoTuner: Block shape <8,8,16> took 0.211347 (s) in 3 time steps
+AutoTuner: Block shape <8,8,24> took 0.379418 (s) in 3 time steps
+AutoTuner: Block shape <8,8,32> took 0.279339 (s) in 3 time steps
+AutoTuner: Block shape <8,8,40> took 0.356388 (s) in 3 time steps
+AutoTuner: Block shape <8,8,64> took 0.318848 (s) in 3 time steps
+AutoTuner: Block shape <8,8,128> took 0.353356 (s) in 3 time steps
+AutoTuner: Block shape <8,8,256> took 0.371686 (s) in 3 time steps
+AutoTuner: Block shape <8,8,512> took 0.377252 (s) in 3 time steps
+AutoTuner: Block shape <8,8,780> took 0.322976 (s) in 3 time steps
+AutoTuner: Block shape <16,16,8> took 0.917305 (s) in 3 time steps
+AutoTuner: Block shape <16,16,24> took 0.534084 (s) in 3 time steps
+AutoTuner: Block shape <16,16,32> took 0.389604 (s) in 3 time steps
+AutoTuner: Block shape <16,16,40> took 0.496339 (s) in 3 time steps
+AutoTuner: Block shape <16,16,64> took 0.420248 (s) in 3 time steps
+AutoTuner: Block shape <16,16,128> took 0.441606 (s) in 3 time steps
+AutoTuner: Block shape <16,16,256> took 0.405204 (s) in 3 time steps
+AutoTuner: Block shape <16,16,512> took 0.387482 (s) in 3 time steps
+AutoTuner: Block shape <16,16,780> took 0.320745 (s) in 3 time steps
+AutoTuner: Block shape <24,24,8> took 1.251630 (s) in 3 time steps
+AutoTuner: Block shape <24,24,16> took 0.532067 (s) in 3 time steps
+AutoTuner: Block shape <24,24,32> took 0.492987 (s) in 3 time steps
+AutoTuner: Block shape <24,24,40> took 0.576957 (s) in 3 time steps
+AutoTuner: Block shape <24,24,64> took 0.471902 (s) in 3 time steps
+AutoTuner: Block shape <24,24,128> took 0.441378 (s) in 3 time steps
+AutoTuner: Block shape <24,24,256> took 0.410354 (s) in 3 time steps
+AutoTuner: Block shape <24,24,512> took 0.388669 (s) in 3 time steps
+AutoTuner: Block shape <24,24,780> took 0.319936 (s) in 3 time steps
+AutoTuner: Block shape <32,32,8> took 1.466025 (s) in 3 time steps
+AutoTuner: Block shape <32,32,16> took 0.643580 (s) in 3 time steps
+AutoTuner: Block shape <32,32,24> took 0.711790 (s) in 3 time steps
+AutoTuner: Block shape <32,32,40> took 0.601768 (s) in 3 time steps
+AutoTuner: Block shape <32,32,64> took 0.502509 (s) in 3 time steps
+AutoTuner: Block shape <32,32,128> took 0.447056 (s) in 3 time steps
+AutoTuner: Block shape <32,32,256> took 0.415108 (s) in 3 time steps
+AutoTuner: Block shape <32,32,512> took 0.387124 (s) in 3 time steps
+AutoTuner: Block shape <32,32,780> took 0.322138 (s) in 3 time steps
+AutoTuner: Block shape <16,8,8> took 0.789508 (s) in 3 time steps
+AutoTuner: Block shape <8,16,8> took 0.803472 (s) in 3 time steps
+AutoTuner: Block shape <16,8,16> took 0.364915 (s) in 3 time steps
+AutoTuner: Block shape <8,16,16> took 0.377846 (s) in 3 time steps
+AutoTuner: Block shape <32,16,16> took 0.454544 (s) in 3 time steps
+AutoTuner: Block shape <16,32,16> took 0.575288 (s) in 3 time steps
+AutoTuner: Block shape <32,16,32> took 0.435326 (s) in 3 time steps
+AutoTuner: Block shape <16,32,32> took 0.514491 (s) in 3 time steps
+AutoTuner: Block shape <48,24,24> took 0.683827 (s) in 3 time steps
+AutoTuner: Block shape <24,48,24> took 0.732694 (s) in 3 time steps
+AutoTuner: Block shape <24,24,48> took 0.486062 (s) in 3 time steps
+AutoTuner: Block shape <48,48,24> took 0.730761 (s) in 3 time steps
+AutoTuner: Block shape <48,24,48> took 0.497343 (s) in 3 time steps
+AutoTuner: Block shape <24,48,48> took 0.515083 (s) in 3 time steps
+AutoTuner: Block shape <48,48,48> took 0.518461 (s) in 3 time steps
+AutoTuner: Block shape <64,32,32> took 0.547270 (s) in 3 time steps
+AutoTuner: Block shape <32,64,32> took 0.565791 (s) in 3 time steps
+AutoTuner: Block shape <64,64,32> took 0.569680 (s) in 3 time steps
+AutoTuner: Block shape <64,32,64> took 0.487300 (s) in 3 time steps
+AutoTuner: Block shape <32,64,64> took 0.493414 (s) in 3 time steps
+AutoTuner: Block shape <80,40,40> took 0.606430 (s) in 3 time steps
+AutoTuner: Block shape <40,80,40> took 0.617348 (s) in 3 time steps
+AutoTuner: Block shape <40,40,80> took 0.471567 (s) in 3 time steps
+AutoTuner: Block shape <80,80,40> took 0.631228 (s) in 3 time steps
+AutoTuner: Block shape <80,40,80> took 0.485053 (s) in 3 time steps
+AutoTuner: Block shape <40,80,80> took 0.491036 (s) in 3 time steps
+AutoTuner: Block shape <80,80,80> took 0.519899 (s) in 3 time steps
+AutoTuner: Block shape <128,64,64> took 0.506714 (s) in 3 time steps
+AutoTuner: Block shape <64,128,64> took 0.512993 (s) in 3 time steps
+AutoTuner: Block shape <64,64,128> took 0.461917 (s) in 3 time steps
+AutoTuner: Block shape <128,128,64> took 0.507624 (s) in 3 time steps
+AutoTuner: Block shape <128,64,128> took 0.456571 (s) in 3 time steps
+AutoTuner: Block shape <64,128,128> took 0.466929 (s) in 3 time steps
+AutoTuner: Block shape <256,128,128> took 0.482392 (s) in 3 time steps
+AutoTuner: Block shape <128,256,128> took 0.487725 (s) in 3 time steps
+AutoTuner: Block shape <128,128,256> took 0.442232 (s) in 3 time steps
+AutoTuner: Block shape <256,256,128> took 0.488549 (s) in 3 time steps
+AutoTuner: Block shape <256,128,256> took 0.461043 (s) in 3 time steps
+AutoTuner: Block shape <128,256,256> took 0.462658 (s) in 3 time steps
+AutoTuner: Block shape <512,256,256> took 1.156078 (s) in 3 time steps
+AutoTuner: Block shape <256,512,256> took 1.154843 (s) in 3 time steps
+AutoTuner: Block shape <256,256,512> took 0.819247 (s) in 3 time steps
+AutoTuner: Block shape <512,512,256> took 3.203924 (s) in 3 time steps
+AutoTuner: Block shape <512,256,512> took 2.250638 (s) in 3 time steps
+AutoTuner: Block shape <256,512,512> took 2.254192 (s) in 3 time steps
+Auto-tuned block shape: {'x0_block_size': 8, 'y0_block_size': 8, 'z0_block_size': 16}
+=========================================================================================
+Section section_1<327,1> with OI=0.96 computed in 0.001 s [0.04 GFlops/s]
+Section section_2<327,768> with OI=2.09 computed in 0.046 s [0.46 GFlops/s]
+Section main<327,780,780,780> with OI=3.01 computed in 36.039 s [215.29 GFlops/s, 4.31 GPts/s]
+=========================================================================================
+Allocating memory for m ((788, 788, 788))
+Allocating memory for damp ((788, 788, 788))
+Allocating memory for src ((329, 1))
+Allocating memory for src_coords ((1, 3))
+Allocating memory for nrec_coords ((768, 3))
+Applying Forward
+Allocating memory for rec_coords ((768, 3))
+DSE: extract_time_invariants [flops: 75, elapsed: 0.04] >>
+     eliminate_inter_stencil_redundancies [flops: 75, elapsed: 0.04] >>
+     eliminate_intra_stencil_redundancies [flops: 66, elapsed: 0.07] >>
+     factorize [flops: 46, elapsed: 0.37] >>
+     finalize [flops: 50, elapsed: 0.01]
+     [Total elapsed: 0.54 s]
+DLE: avoid_denormals [elapsed: 0.00] >>
+     loop_fission [elapsed: 0.06] >>
+     loop_blocking [elapsed: 0.73] >>
+     simdize [elapsed: 0.14] >>
+     ompize [elapsed: 0.53] >>
+     create_elemental_functions [elapsed: 0.93] >>
+     minimize_remainders [elapsed: 0.08]
+     [Total elapsed: 2.47 s]
+Allocating memory for rec ((329, 768))
+Allocating memory for u ((3, 788, 788, 788))
+IntelCompiler: compiled /tmp/devito-i8vvenfx/92bd3b21d3ad32a95984b5dd0a371435b59223c7.c [6.35 s]
+AutoTuner: Block shape <8,8,8> took 0.287888 (s) in 3 time steps
+AutoTuner: Block shape <16,16,16> took 0.416953 (s) in 3 time steps
+AutoTuner: Block shape <24,24,24> took 0.657790 (s) in 3 time steps
+AutoTuner: Block shape <32,32,32> took 0.538216 (s) in 3 time steps
+AutoTuner: Block shape <40,40,40> took 0.608284 (s) in 3 time steps
+AutoTuner: Block shape <64,64,64> took 0.504122 (s) in 3 time steps
+AutoTuner: Block shape <128,128,128> took 0.413805 (s) in 3 time steps
+AutoTuner: Block shape <256,256,256> took 0.463976 (s) in 3 time steps
+AutoTuner: Block shape <512,512,512> took 4.882083 (s) in 3 time steps
+AutoTuner: Block shape <780,780,780> took 3.477627 (s) in 3 time steps
+AutoTuner: Block shape <8,8,16> took 0.210866 (s) in 3 time steps
+AutoTuner: Block shape <8,8,24> took 0.378998 (s) in 3 time steps
+AutoTuner: Block shape <8,8,32> took 0.279104 (s) in 3 time steps
+AutoTuner: Block shape <8,8,40> took 0.356856 (s) in 3 time steps
+AutoTuner: Block shape <8,8,64> took 0.317541 (s) in 3 time steps
+AutoTuner: Block shape <8,8,128> took 0.353743 (s) in 3 time steps
+AutoTuner: Block shape <8,8,256> took 0.372162 (s) in 3 time steps
+AutoTuner: Block shape <8,8,512> took 0.376932 (s) in 3 time steps
+AutoTuner: Block shape <8,8,780> took 0.323352 (s) in 3 time steps
+AutoTuner: Block shape <16,16,8> took 0.918311 (s) in 3 time steps
+AutoTuner: Block shape <16,16,24> took 0.534073 (s) in 3 time steps
+AutoTuner: Block shape <16,16,32> took 0.392481 (s) in 3 time steps
+AutoTuner: Block shape <16,16,40> took 0.496489 (s) in 3 time steps
+AutoTuner: Block shape <16,16,64> took 0.420099 (s) in 3 time steps
+AutoTuner: Block shape <16,16,128> took 0.422694 (s) in 3 time steps
+AutoTuner: Block shape <16,16,256> took 0.405029 (s) in 3 time steps
+AutoTuner: Block shape <16,16,512> took 0.387050 (s) in 3 time steps
+AutoTuner: Block shape <16,16,780> took 0.320366 (s) in 3 time steps
+AutoTuner: Block shape <24,24,8> took 1.252682 (s) in 3 time steps
+AutoTuner: Block shape <24,24,16> took 0.535888 (s) in 3 time steps
+AutoTuner: Block shape <24,24,32> took 0.493123 (s) in 3 time steps
+AutoTuner: Block shape <24,24,40> took 0.576741 (s) in 3 time steps
+AutoTuner: Block shape <24,24,64> took 0.471872 (s) in 3 time steps
+AutoTuner: Block shape <24,24,128> took 0.441579 (s) in 3 time steps
+AutoTuner: Block shape <24,24,256> took 0.619920 (s) in 3 time steps
+AutoTuner: Block shape <24,24,512> took 0.433879 (s) in 3 time steps
+AutoTuner: Block shape <24,24,780> took 0.336740 (s) in 3 time steps
+AutoTuner: Block shape <32,32,8> took 1.603014 (s) in 3 time steps
+AutoTuner: Block shape <32,32,16> took 0.642135 (s) in 3 time steps
+AutoTuner: Block shape <32,32,24> took 0.711623 (s) in 3 time steps
+AutoTuner: Block shape <32,32,40> took 0.601500 (s) in 3 time steps
+AutoTuner: Block shape <32,32,64> took 0.485621 (s) in 3 time steps
+AutoTuner: Block shape <32,32,128> took 0.445715 (s) in 3 time steps
+AutoTuner: Block shape <32,32,256> took 0.415059 (s) in 3 time steps
+AutoTuner: Block shape <32,32,512> took 0.387962 (s) in 3 time steps
+AutoTuner: Block shape <32,32,780> took 0.321343 (s) in 3 time steps
+AutoTuner: Block shape <16,8,8> took 0.788237 (s) in 3 time steps
+AutoTuner: Block shape <8,16,8> took 0.802002 (s) in 3 time steps
+AutoTuner: Block shape <16,8,16> took 0.364892 (s) in 3 time steps
+AutoTuner: Block shape <8,16,16> took 0.377364 (s) in 3 time steps
+AutoTuner: Block shape <32,16,16> took 0.454277 (s) in 3 time steps
+AutoTuner: Block shape <16,32,16> took 0.575948 (s) in 3 time steps
+AutoTuner: Block shape <32,16,32> took 0.435742 (s) in 3 time steps
+AutoTuner: Block shape <16,32,32> took 0.514282 (s) in 3 time steps
+AutoTuner: Block shape <48,24,24> took 0.683715 (s) in 3 time steps
+AutoTuner: Block shape <24,48,24> took 0.732909 (s) in 3 time steps
+AutoTuner: Block shape <24,24,48> took 0.487215 (s) in 3 time steps
+AutoTuner: Block shape <48,48,24> took 0.729633 (s) in 3 time steps
+AutoTuner: Block shape <48,24,48> took 0.497371 (s) in 3 time steps
+AutoTuner: Block shape <24,48,48> took 0.515067 (s) in 3 time steps
+AutoTuner: Block shape <48,48,48> took 0.513870 (s) in 3 time steps
+AutoTuner: Block shape <64,32,32> took 0.546807 (s) in 3 time steps
+AutoTuner: Block shape <32,64,32> took 0.565673 (s) in 3 time steps
+AutoTuner: Block shape <64,64,32> took 0.570342 (s) in 3 time steps
+AutoTuner: Block shape <64,32,64> took 0.491266 (s) in 3 time steps
+AutoTuner: Block shape <32,64,64> took 0.493389 (s) in 3 time steps
+AutoTuner: Block shape <80,40,40> took 0.606484 (s) in 3 time steps
+AutoTuner: Block shape <40,80,40> took 0.617551 (s) in 3 time steps
+AutoTuner: Block shape <40,40,80> took 0.471353 (s) in 3 time steps
+AutoTuner: Block shape <80,80,40> took 0.631544 (s) in 3 time steps
+AutoTuner: Block shape <80,40,80> took 0.485527 (s) in 3 time steps
+AutoTuner: Block shape <40,80,80> took 0.491554 (s) in 3 time steps
+AutoTuner: Block shape <80,80,80> took 0.520229 (s) in 3 time steps
+AutoTuner: Block shape <128,64,64> took 0.506271 (s) in 3 time steps
+AutoTuner: Block shape <64,128,64> took 0.513089 (s) in 3 time steps
+AutoTuner: Block shape <64,64,128> took 0.461211 (s) in 3 time steps
+AutoTuner: Block shape <128,128,64> took 0.506678 (s) in 3 time steps
+AutoTuner: Block shape <128,64,128> took 0.456551 (s) in 3 time steps
+AutoTuner: Block shape <64,128,128> took 0.465947 (s) in 3 time steps
+AutoTuner: Block shape <256,128,128> took 0.484399 (s) in 3 time steps
+AutoTuner: Block shape <128,256,128> took 0.495722 (s) in 3 time steps
+AutoTuner: Block shape <128,128,256> took 0.437458 (s) in 3 time steps
+AutoTuner: Block shape <256,256,128> took 0.515827 (s) in 3 time steps
+AutoTuner: Block shape <256,128,256> took 0.457774 (s) in 3 time steps
+AutoTuner: Block shape <128,256,256> took 0.466061 (s) in 3 time steps
+AutoTuner: Block shape <512,256,256> took 1.157895 (s) in 3 time steps
+AutoTuner: Block shape <256,512,256> took 1.152841 (s) in 3 time steps
+AutoTuner: Block shape <256,256,512> took 0.818164 (s) in 3 time steps
+AutoTuner: Block shape <512,512,256> took 3.204028 (s) in 3 time steps
+AutoTuner: Block shape <512,256,512> took 2.253087 (s) in 3 time steps
+AutoTuner: Block shape <256,512,512> took 2.255194 (s) in 3 time steps
+Auto-tuned block shape: {'x0_block_size': 8, 'y0_block_size': 8, 'z0_block_size': 16}
+=========================================================================================
+Section section_1<327,1> with OI=0.96 computed in 0.001 s [0.04 GFlops/s]
+Section section_2<327,768> with OI=2.09 computed in 0.018 s [1.15 GFlops/s]
+Section main<327,780,780,780> with OI=3.01 computed in 35.778 s [216.87 GFlops/s, 4.34 GPts/s]
+=========================================================================================
+
+
+OpesciBench: Running 3 repeats - parameters: arch: unknown, autotune: True, dle: advanced, dse: advanced, nbpml: 10, shape: (768, 768, 768), space_order: 8, spacing: (20.0, 20.0, 20.0), time_order: 2, tn: 1000
+OpesciBench [14:51:56]: --- Run 0 ---
+OpesciBench [14:56:40]: --- Run 0 finished ---
+
+OpesciBench [14:56:40]: --- Run 1 ---
+OpesciBench [15:01:27]: --- Run 1 finished ---
+
+OpesciBench [15:01:27]: --- Run 2 ---
+OpesciBench [15:06:15]: --- Run 2 finished ---
+
+
+
+Tue Dec 19 15:06:16 PST 2017
+top - 15:06:16 up 1 day,  6:12,  1 user,  load average: 236.47, 183.34, 152.64
+Tasks: 2209 total,   1 running, 2208 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.6 us,  0.4 sy,  0.0 ni, 93.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem : 11538529+total, 11230707+free,  1197420 used,  1880804 buff/cache
+KiB Swap: 58593276 total, 58593276 free,        0 used. 11338133+avail Mem 
+
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+138968 cyount    20   0  152536   4100   1460 R  55.6  0.0   0:00.41 top
+   281 root      20   0       0      0      0 S   2.8  0.0   2:05.40 rcu_sched
+     1 root      20   0   51548  13932   2384 S   0.0  0.0   0:34.59 systemd
+     2 root      20   0       0      0      0 S   0.0  0.0   0:00.12 kthreadd
+     3 root      20   0       0      0      0 S   0.0  0.0   0:00.00 ksoftirqd/0
+     4 root      20   0       0      0      0 S   0.0  0.0   1:50.20 kworker/0:0
+     5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H
+     7 root      rt   0       0      0      0 S   0.0  0.0   0:04.10 migration/0
+     8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh
+     9 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/0
+    10 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/1
+    11 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/2
+    12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/3
+    13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/4
+    14 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/5
+    15 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/6
+    16 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/7
+    17 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/8
+    18 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/9
+    19 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/10
+    20 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/11
+    21 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/12
+    22 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/13
