@@ -1,26 +1,30 @@
 #!/bin/bash
 # Job name
-#PBS -N demo_mpi_devito_job
+#PBS -N results_mpi_devito_job
 # Time required in hh:mm:ss
-#PBS -l walltime=00:59:00
+#PBS -l walltime=00:05:00
 # Resource requirements
-#PBS -lselect=1:ncpus=24:mem=46gb:mpiprocs=24:ompthreads=1
+#PBS -lselect=4:ncpus=24:mem=46gb:mpiprocs=24:ompthreads=1
 # Files to contain standard error and standard output
 
 echo Working Directory is $PBS_O_WORKDIR
 cd $PBS_O_WORKDIR
 
 echo -ne Loading required modules...
+module load anaconda3/personal
 module load intel-suite/2017
 icc --version
 module load mpi
 mpicc -v
 echo ...DONE
 
+source activate devito
+conda install mpi4py
+python print_mpi4py_conf.py
+
 cd $HOME/opesci/
 module load anaconda3/personal
 
-source activate devito
 export DEVITO_HOME=`pwd`/devito
 cd devito/benchmarks/user/
 
