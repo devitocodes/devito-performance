@@ -24,21 +24,15 @@ module load anaconda3/personal
 conda env create -f environment.yml
 source activate devito
 pip install -e .
-#conda install gcc_linux-64
-conda install mpi4py
+pip install mpi4py
 # Install dependencies (optional as well for MPI)
-pip install -r requirements-optional.txt
 cd $HOME/opesci
-
 # Install OpesciBench
 git clone https://github.com/opesci/opescibench.git
 cd opescibench
-git status
 git checkout mpi-perf-fixes
 
-# Installing OpesciBench
 pip install -e .
-# Navigate to benchmarks folder
 
 echo Returning to $HOME directory
 cd $HOME
