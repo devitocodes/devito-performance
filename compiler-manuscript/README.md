@@ -7,7 +7,8 @@
 
 You will need:
 
-* [Devito vTODO](todo) to reproduce the experiments in the manuscript.
+* [Devito v3.1](https://github.com/opesci/devito/releases/tag/v3.1.0) to
+  reproduce the experiments in the manuscript.
 * [Opescibench v0.1](https://github.com/opesci/opescibench/releases) to
   recreate the plots.
 
