@@ -23,7 +23,7 @@ This directory is structured as follows:
   reads ``machines.txt``.
 * The program ``plot.py`` can be run to recreate the plots. You can run it as:
   ```
-  DEVITO_HOME=/absolute/path/to/devito python plot.py data
+  DEVITO_HOME=/absolute/path/to/devito python plot.py `pwd`/results
   ```
   Note that you are expected to run it from this directory, otherwise you have
   to specify the right path to ``results``. You will find the generated plots
