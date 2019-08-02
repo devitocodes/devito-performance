@@ -9,8 +9,12 @@ You will need:
 
 * [Devito v3.1](https://github.com/opesci/devito/releases/tag/v3.1.0) to
   reproduce the experiments in the manuscript.
-* [Opescibench v0.1](https://github.com/opesci/opescibench/releases) to
-  recreate the plots.
+* [Devito v3.3](https://github.com/opesci/devito/releases/tag/v3.3) and
+  [Opescibench v0.1](https://github.com/opesci/opescibench/releases) to
+  recreate the plots. The reason Devito v3.3 is used for plotting instead
+  of the aforementioned Devito v3.1 is simply that substantial improvements to
+  the plotting routines have been added over time, and the manuscript uses the
+  v3.3 variant.
 
 This directory is structured as follows:
 
