@@ -15,6 +15,8 @@ You will need:
   of the aforementioned Devito v3.1 is simply that substantial improvements to
   the plotting routines have been added over time, and the manuscript uses the
   v3.3 variant.
+* [YASK 7f0334d](https://github.com/opesci/yask) to run the experiments with
+  the YASK backend.
 
 This directory is structured as follows:
 
