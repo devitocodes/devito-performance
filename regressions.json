@@ -1,1 +1,1 @@
-{"regressions": [["simple_operators.time_gaussian_smoother", "graphs/arch-x86_64/branch-master/cpu-Intel(R) Xeon(R) Platinum 8168 CPU @ 2.70GHz/machine-asv-runner-00/num_cpu-8/os-Linux 5.3.0-1020-azure/python-3.6/ram-16370928/simple_operators.time_gaussian_smoother.json", {}, null, 1.053150303999928, 0.933155399999805, [[null, 10964, 0.933155399999805, 1.053150303999928]]]]}
+{"regressions": []}
