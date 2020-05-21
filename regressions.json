@@ -1,1 +1,1 @@
-{"regressions": [["simple_operators.time_basic", "graphs/arch-x86-64/branch-master/cpu-IntelXeon8168/machine-F8s_v2/num_cpu-8/os-ubuntu-18.04/python-3.6/ram-16GB/simple_operators.time_basic.json", {}, null, 1.670317567000012, 1.5135720530000185, [[null, 11051, 1.5135720530000185, 1.670317567000012]]]]}
+{"regressions": []}
